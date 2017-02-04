@@ -1,11 +1,19 @@
 {
   "name": "node-js-http",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/masak2/intro-curriculum-3011.git"
+  },
+  "bugs": {
+    "url": "https://github.com/masak2/intro-curriculum-3011/issues"
+  },
+  "homepage": "https://github.com/masak2/intro-curriculum-3011#readme",
+  "description": ""
 }
