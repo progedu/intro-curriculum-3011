@@ -1,10 +1,12 @@
 'use strict';
 const http = require('http');
+const fs = require('fs');
+const template_dir = __dirname + '/templates/';
 const server = http.createServer((req, res) => {
   res.writeHead(200, {
-    'Content-Type': 'text/plain; charset=utf-8'
+    'Content-Type': 'text/html; charset=utf-8'
   });
-  res.write(req.headers['user-agent']);
+  res.write(fs.readFileSync(template_dir + 'index.html'), 'utf8');
   res.end();
 });
 const port = 8000;
