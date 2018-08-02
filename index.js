@@ -1,15 +1,23 @@
 'use strict';
 var http = require('http');
-var fs = require('fs');
+// var fs = require('fs');
 
-var server = http.createServer((req, res) => {
-  fs.readFile('./firstnode.html','utf-8',function(error,data){
+// var server = http.createServer((req, res) => {
+//   fs.readFile('./firstnode.html','utf-8',function(error,data){
+//   res.writeHead(200, {
+//     'Content-Type': 'text/html'
+//   });
+//   res.write(data);
+//   res.end();
+// });
+// });
+
+const server = http.createServer((req, res) => {
   res.writeHead(200, {
-    'Content-Type': 'text/html'
+      'Content-Type': 'text/html; charset=utf-8'
   });
-  res.write(data);
+  res.write('<!DOCTYPE html><html lang="ja"><body><h1>HTMLの一番大きい見出しを表示!</h1></body></html>');
   res.end();
-});
 });
 
 const port = 8000;
