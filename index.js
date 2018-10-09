@@ -5,7 +5,7 @@ const server = http.createServer((req, res) => {
     'Content-Type': 'text/html; charset=utf-8'
   });
   //res.write(req.headers['user-agent']);
-  res.write('<!DOCTYPE html><html lang="ja"><body><h1>HTML$B$N0lHVBg$-$$8+=P$7$rI=<($7$^$9(B</h1></body></html>')
+  res.write('<!DOCTYPE html><html lang="ja"><body><h1>HTMLの一番大きい見出しを表示します</h1></body></html>')
   res.end();
 });
 const port = 8080;
