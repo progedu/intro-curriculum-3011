@@ -8,7 +8,7 @@ const server = http.createServer((req, res) => { // リクエストとレスポ�
     // サーバーにリクエストがあった時に呼び出されるコールバック関数
     // writeHeadで、レスポンスヘッダを書き込む
     res.writeHead(200, { // 200は成功を表すステータスコード
-        'Content-Type': 'text/html; charset=utf-8'// ここに内容の形式についての説明を記述 他の例「text/plane」
+        'Content-Type': 'text/html; charset=utf-8'// ここに内容の形式について記述
     });
     // write関数で、HTTPレスポンスの内容を書き出す
     res.write('<!DOCTYPE html><html lang="ja"><body><h1>HTMLの一番大きい見出しを表示します</h1></body></html>');
