@@ -3,7 +3,7 @@
 const http = require('http');
 
 const fs = require('fs');
-const htmlData = fs.readFilleSync('./index.html');
+const htmlData = fs.readFileSync('./index.html');
  // 事前に準備した html ファイルを読み込んで定義しておく
 
 const server = http.createServer((req, res) => {
