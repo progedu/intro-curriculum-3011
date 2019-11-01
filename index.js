@@ -2,13 +2,16 @@
 
 const http = require('http');
 
+const fs = require('fs');
+const htmlData = fs.readFilleSync('./index.html');
+ // 事前に準備した html ファイルを読み込んで定義しておく
+
 const server = http.createServer((req, res) => {
   res.writeHead(200, {
     'Content-Type': 'text/html; charset=utf-8'
   });
-  res.write(
-    '<!DOCTYPE html><html lang="ja"><body><h1>HTMLの一番大きい見出しを表示します</h1 ></body ></html > '
-  );
+  res.write(htmlData);
+   // 定義しておいた html ファイルを表示
   res.end();
 });
 
