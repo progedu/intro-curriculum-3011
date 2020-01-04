@@ -1,0 +1,14 @@
+p {
+    color :orange;
+    font-size: 20px
+}
+
+body {
+    color : gray;
+    font-size:15px
+}
+
+#headline {
+    color : greenyellow;
+    font-size: 20px
+}
