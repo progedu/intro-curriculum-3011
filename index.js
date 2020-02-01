@@ -2,9 +2,11 @@
 const http = require('http');
 const server = http.createServer((req, res) => {
   res.writeHead(200, {
-    'Content-Type': 'text/plain; charset=utf-8'
+    'Content-Type': 'text/html; charset=utf-8'
   });
-  res.write(req.headers['user-agent']);
+  res.write(
+    '<!DOCTYPE html><html lang="ja"><head><title>SifueはBOTです</title></head><body><h1>Sifue、プルリク通してよ。コメントBOTって手抜きすぎじゃあ・・。</h1></body></html>'
+  );
   res.end();
 });
 const port = 8000;
