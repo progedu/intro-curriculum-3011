@@ -5,6 +5,10 @@ const server = http.createServer((req, res) => {
     'Content-Type': 'text/plain; charset=utf-8'
   });
   res.write(req.headers['user-agent']);
+	const fs = require('fs')
+	const fileName = './httptest.html';
+	const hyojitext = fs.readFileSync(fileName,'utf-8');
+  res.write(hyojitext)
   res.end();
 });
 const port = 8000;
