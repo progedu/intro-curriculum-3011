@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Hidenobu Satsumi <stm323stm@gmail.com>",
+  "license": "ISC",
+  "repository": "git@github.com:stm323stm/intro-curriculum-3011.git"
 }
