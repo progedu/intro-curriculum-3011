@@ -2,9 +2,17 @@
 const http = require('http');
 const server = http.createServer((req, res) => {
   res.writeHead(200, {
-    'Content-Type': 'text/plain; charset=utf-8'
+    'Content-Type': 'text/html; charset=utf-8'
   });
-  res.write(req.headers['user-agent']);
+  const html = `<!DOCTYPE html>
+  <html lang="ja">
+    <body>
+      <h1 style=color:darkviolet;>h1タグ</h1>
+      <h2 style=color:darkorchid >h2タグ</h2>
+      <h3 style=color:mediumorchid>h3タグ</h3>
+    </body>
+  </html>`
+  res.write(html);
   res.end();
 });
 const port = 8000;
